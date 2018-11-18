@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import sample.MyTextField?>
+<AnchorPane prefHeight="355.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkerForm">
+   <children>
+      <DatePicker fx:id="dateOfBirthDate" layoutX="17.0" layoutY="200.0" />
+      <Button fx:id="delBut" layoutX="104.0" layoutY="306.0" mnemonicParsing="false" onAction="#delItem" text="Удалить запись" />
+      <Button fx:id="editBut" layoutX="265.0" layoutY="306.0" mnemonicParsing="false" onAction="#editItem" text="Изменить запись" />
+      <TextField fx:id="emailField" layoutX="219.0" layoutY="143.0" />
+      <MyTextField fx:id="phoneField" layoutX="219.0" layoutY="92.0" />
+      <TextField fx:id="nameField" layoutX="22.0" layoutY="92.0" />
+      <TextField fx:id="surnameField" layoutX="20.0" layoutY="48.0" />
+      <Label layoutX="225.0" layoutY="126.0" text="Email" />
+      <Label layoutX="217.0" layoutY="75.0" text="Телефон" />
+      <Label layoutX="224.0" layoutY="24.0" text="Адрес" />
+      <Label layoutX="25.0" layoutY="231.0" text="Паспорт" />
+      <Label layoutX="19.0" layoutY="175.0" text="Дата рождения" />
+      <Label layoutX="24.0" layoutY="126.0" text="Отчество" />
+      <Label layoutX="24.0" layoutY="75.0" text="Имя" />
+      <Label layoutX="24.0" layoutY="24.0" text="Фамилия" />
+      <Button fx:id="cancelBut" layoutX="15.0" layoutY="306.0" mnemonicParsing="false" onAction="#cancel" text="Отменить" />
+      <Button fx:id="saveBut" layoutX="302.0" layoutY="306.0" mnemonicParsing="false" onAction="#save" text="Сохранить" />
+      <TextField fx:id="patronymicField" layoutX="22.0" layoutY="143.0" />
+      <MyTextField fx:id="passportField" layoutX="20.0" layoutY="248.0" />
+      <TextField fx:id="addressField" layoutX="219.0" layoutY="48.0" />
+   </children>
+</AnchorPane>

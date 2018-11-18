@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import sample.MyTextField?>
+<AnchorPane fx:id="anchPane" prefHeight="616.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Tables">
+   <children>
+      <GridPane prefHeight="616.0" prefWidth="689.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="269.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TabPane prefHeight="549.0" prefWidth="616.0" tabClosingPolicy="UNAVAILABLE" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+              <tabs>
+                <Tab fx:id="Car" text="Car">
+                     <content>
+                        <TableView fx:id="carTable" onMouseClicked="#clickCar" prefHeight="587.0" prefWidth="662.0" />
+                     </content>
+                  </Tab>
+                <Tab text="Details">
+                     <content>
+                        <TableView fx:id="detailsTable" onMouseClicked="#clickDetails" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Sales">
+                     <content>
+                        <TableView fx:id="salesTable" onMouseClicked="#clickSales" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Customer">
+                     <content>
+                        <TableView fx:id="customerTable" onMouseClicked="#clickCustomer" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Worker">
+                     <content>
+                        <TableView fx:id="workerTable" onMouseClicked="#clickWorker" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </GridPane>
+      <Button fx:id="addCarBut" layoutX="698.0" layoutY="23.0" mnemonicParsing="false" onAction="#addCar" text="Добавить машину" AnchorPane.rightAnchor="144.0" />
+      <Button fx:id="addDetailsBut" layoutX="698.0" layoutY="67.0" mnemonicParsing="false" onAction="#addDetails" text="Добавить деталь" AnchorPane.rightAnchor="151.0" />
+      <Button fx:id="refreshBut" layoutX="698.0" layoutY="249.0" mnemonicParsing="false" onAction="#refreshTable" text="Обновить" AnchorPane.rightAnchor="189.0" />
+      <Button fx:id="addDetailsBut1" layoutX="698.0" layoutY="114.0" mnemonicParsing="false" onAction="#addWorker" text="Добавить работника" AnchorPane.rightAnchor="129.0" />
+      <Button fx:id="addCustomer" layoutX="698.0" layoutY="158.0" mnemonicParsing="false" onAction="#addCustomer" text="Добавить клиента" AnchorPane.rightAnchor="144.0" />
+      <Button fx:id="addSales" layoutX="695.0" layoutY="200.0" mnemonicParsing="false" onAction="#addSales" text="Добавить продажу" AnchorPane.rightAnchor="142.0" />
+      <MyTextField fx:id="yearField" layoutX="689.0" layoutY="363.0"  AnchorPane.rightAnchor="144.0"/>
+      <Label layoutX="689.0" layoutY="337.0" text="Введите год для join" AnchorPane.rightAnchor="144.0"/>
+      <Button fx:id="joinBut" layoutX="689.0" layoutY="399.0" mnemonicParsing="false" onAction="#join" text="Join" AnchorPane.rightAnchor="144.0"/>
+   </children>
+</AnchorPane>

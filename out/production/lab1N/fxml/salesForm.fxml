@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="372.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SalesForm">
+   <children>
+      <Button fx:id="saveBut" layoutX="312.0" layoutY="316.0" mnemonicParsing="false" onAction="#save" text="Сохранить" />
+      <Button fx:id="cancelBut" layoutX="25.0" layoutY="316.0" mnemonicParsing="false" onAction="#cancel" text="Отменить" />
+      <Label layoutX="34.0" layoutY="34.0" text="Гос.номер" />
+      <Label layoutX="34.0" layoutY="85.0" text="Цена" />
+      <Label layoutX="34.0" layoutY="136.0" text="Дата" />
+      <Label layoutX="29.0" layoutY="185.0" text="Номер транзакции" />
+      <Label layoutX="234.0" layoutY="34.0" text="Скидка" />
+      <Label layoutX="227.0" layoutY="85.0" text="Работник" />
+      <Label layoutX="227.0" layoutY="136.0" text="Клиент" />
+      <TextField fx:id="priceField" layoutX="32.0" layoutY="102.0" />
+      <Button fx:id="editBut" layoutX="275.0" layoutY="316.0" mnemonicParsing="false" onAction="#editItem" text="Изменить запись" />
+      <Button fx:id="delBut" layoutX="114.0" layoutY="316.0" mnemonicParsing="false" onAction="#delItem" text="Удалить запись" />
+      <DatePicker fx:id="dateField" layoutX="34.0" layoutY="153.0" />
+      <TextField fx:id="transactionNumberField" layoutX="32.0" layoutY="202.0" />
+      <CheckBox fx:id="creditBox" layoutX="33.0" layoutY="243.0" mnemonicParsing="false" text="Кредит" />
+      <TextField fx:id="discountField" layoutX="227.0" layoutY="58.0" />
+      <ChoiceBox fx:id="idWorkerChoice" layoutX="227.0" layoutY="102.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="idCustomerChoice" layoutX="227.0" layoutY="153.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="stateNumberChoice" layoutX="32.0" layoutY="58.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

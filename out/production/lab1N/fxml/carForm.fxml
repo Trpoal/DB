@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import sample.MyTextField?>
+<AnchorPane prefHeight="355.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CarForm">
+   <children>
+      <Button fx:id="delBut" layoutX="104.0" layoutY="306.0" mnemonicParsing="false" onAction="#delItem" text="Удалить запись" />
+      <Button fx:id="editBut" layoutX="265.0" layoutY="306.0" mnemonicParsing="false" onAction="#editItem" text="Изменить запись" />
+      <MyTextField fx:id="mileageField" layoutX="219.0" layoutY="143.0" />
+      <MyTextField fx:id="yearField" layoutX="219.0" layoutY="92.0" />
+      <TextField fx:id="modelField" layoutX="22.0" layoutY="92.0" />
+      <TextField fx:id="stateNumberField" layoutX="20.0" layoutY="48.0" />
+      <Label layoutX="217.0" layoutY="126.0" text="Пробег" />
+      <Label layoutX="217.0" layoutY="75.0" text="Год" />
+      <Label layoutX="224.0" layoutY="24.0" text="Двигатель" />
+      <Label layoutX="25.0" layoutY="231.0" text="Кузов" />
+      <Label layoutX="19.0" layoutY="175.0" text="Коробка передач" />
+      <Label layoutX="24.0" layoutY="126.0" text="Марка" />
+      <Label layoutX="24.0" layoutY="75.0" text="Модель" />
+      <Label layoutX="24.0" layoutY="24.0" text="Гос.номер" />
+      <Button fx:id="cancelBut" layoutX="15.0" layoutY="306.0" mnemonicParsing="false" onAction="#cancel" text="Отменить" />
+      <Button fx:id="saveBut" layoutX="302.0" layoutY="306.0" mnemonicParsing="false" onAction="#save" text="Сохранить" />
+      <ChoiceBox fx:id="brandChoice" layoutX="22.0" layoutY="143.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="transmissionChoice" layoutX="20.0" layoutY="199.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="bodyChoice" layoutX="20.0" layoutY="258.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="engineChoice" layoutX="219.0" layoutY="48.0" prefWidth="150.0" />
+      <Label layoutX="217.0" layoutY="175.0" text="Цена" />
+      <MyTextField fx:id="priceField" layoutX="217.0" layoutY="192.0" />
+   </children>
+</AnchorPane>
